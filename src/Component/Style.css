@@ -98,5 +98,62 @@ body {
 	color: #666;
 	cursor: not-allowed;
   }
+  input,
+select {
+  width: calc(100% - 400px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.pagination li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.page-link {
+  font-family: "Your Chosen Font", sans-serif;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+
+.page-item.active .page-link {
+  font-weight: bold;
+}
+
+.page-link.disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
   
   
