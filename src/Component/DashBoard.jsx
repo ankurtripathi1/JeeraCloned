@@ -1,6 +1,7 @@
 import React from "react";
 import Task from "./Task";
 import EditTask from "./EditTask";
+import "./Style.css"; 
 
 const Dashboard = ({ user, onLogout }) => {
 

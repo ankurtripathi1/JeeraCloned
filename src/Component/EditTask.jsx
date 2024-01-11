@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTask, editTask } from "../Store/Reducers";
 import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+import "./Style.css"; 
 
 const statusArr = ["Open", "Close"];
 function EditTask() {

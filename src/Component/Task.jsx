@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { taskDelete } from "../Store/Reducers";
 import Pagination from "react-js-pagination";
-import "./Task.css"; 
+import "./Style.css"; 
 
 function Task({ user }) {
   const dispatch = useDispatch();
