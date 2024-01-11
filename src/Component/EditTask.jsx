@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTask, editTask } from "../Store/Reducers";
 import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import "./Style.css"; 
+import "./Style.css";
 
 const statusArr = ["Open", "Close"];
 function EditTask() {
@@ -87,7 +87,12 @@ function EditTask() {
               <option key={index}>{user}</option>
             ))}
           </select>
-          <select value={status} onChange={(e) => setStatus(e.target.value)}>
+          <select
+		    placeHolder="Select Status"
+            value={status}
+            required
+            onChange={(e) => setStatus(e.target.value)}
+          >
             {statusArr.map((status, index) => (
               <option key={index}>{status}</option>
             ))}

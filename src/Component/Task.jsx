@@ -50,8 +50,8 @@ function Task({ user }) {
 		  <td>{task.assignedTo}</td>
 		  <td>{task.status}</td>
 		  <td>
-			<Link to={`/edit-task/${task.id}`}>Edit</Link>
-			{user.role === "admin" ? <button onClick={() => handleDelete(task.id)}>Delete</button> : null}
+			<button><Link to={`/edit-task/${task.id}`}>Edit</Link></button>
+			{user.role === "Admin" ? <button onClick={() => handleDelete(task.id)}>Delete</button> : null}
 		  </td>
 		</tr>
         ))}
